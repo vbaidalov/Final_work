@@ -6,3 +6,15 @@ Console.Write("Напишите, что хотите и программа бу�
 string[] str1 = Console.ReadLine().Split(' '); // заведение элементов в массив из строки 
 string[] str2 = new string[str1.Length];
 
+void SecondArrayWithIF(string[] str1, string[] str2)
+{
+    int count = 0;
+    for (int i = 0; i < str1.Length; i++)
+    {
+    if(str1[i].Length <= 3)
+        {
+        str2[count] = str1[i];
+        count++;
+        }
+    }
+}
